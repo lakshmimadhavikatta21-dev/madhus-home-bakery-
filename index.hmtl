@@ -4,7 +4,7 @@
 <title>Madhus Home Bakery</title>
 <style>
 body {
-  font-Arial: family;
+  font-family: Arial;
   text-align: center;
   background: #fff0f5;
 }
