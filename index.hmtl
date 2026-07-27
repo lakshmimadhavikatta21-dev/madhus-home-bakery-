@@ -1,42 +1,30 @@
-<!DOCTYPE hmtl>
-<html>
-<head>
-<title>Madhus Home Bakery</title>
-<style>
-body {
-  font-family: Arial;
-  text-align: center;
-  background: #fff0f5;
-}
-h1 {
-  color: #e91e63;
-}
-.menu {
-  background: white;
-  margin: 20px;
-  padding: 15px;
-  border-radius: 10px;
-}
-</style>
-</head>
+</section>
 
-<body>
+<section class="contact">
+  <h2>📞 Order Now</h2>
 
-<h1>🍰 Madhus Home Bakery</h1>
-<p>Fresh Cakes | Sweets | Fast Delivery</p>
+  <p>Call us or order directly on WhatsApp</p>
 
-<div class="menu">
-<h2>Menu</h2>
-<p>Vanilla Cake Pops - ₹30</p>
-<p>Chocolate Cake Pops - ₹40</p>
-<p>Bobillones Plain - ₹60</p>
-<p>Chocolate Bobillones - ₹80</p>
-<p>Nutella Bobillones - ₹100</p>
-</div>
+  <a class="call" href="tel:+919347698049">
+    📞 Call: 9347698049
+  </a>
 
-<h3>📞 Order: 9347698049</h3>
-<p>📍 Kalidindi</p>
-<p>⏰ Order before 1 hour</p>
+  <a class="order"
+     href="https://wa.me/919347698049"
+     target="_blank">
+    💬 WhatsApp Order
+  </a>
+
+  <p>⏰ Order before 1 hour</p>
+</section>
+
+<footer>
+  © 2026 Madhus Home Bakery
+  <br>
+  Made with ❤️
+</footer>
 
 </body>
-</hmtl>
+</html>
+Sure 👍 clean index.html code ఇస్తున్నాను. మొత్తం old code delete చేసి, ఇది మొత్తం copy-paste చేయండి:
+HTML
