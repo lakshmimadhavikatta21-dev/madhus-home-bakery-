@@ -3,7 +3,19 @@
   <p>Tea Cake - ₹150</p>
   <p>Fruit Cake - ₹180</p>
 </div>
+<div class="card">
+  <h2>🍩 Bombolones</h2>
+  <p>Plain - ₹60 (1 pc)</p>
+  <p>Chocolate - ₹80 (1 pc)</p>
+  <p>Nutella - ₹100 (1 pc)</p>
+</div>
 
+<div class="card">
+  <h2>🍩 Donuts</h2>
+  <p>Glazed Donut - ₹50</p>
+  <p>Chocolate Donut - ₹70</p>
+  <p>Strawberry Donut - ₹70</p>
+</div>
 <div class="card">
   <h2>🍪 Cookies</h2>
   <p>Chocolate Cookies - ₹100</p>
