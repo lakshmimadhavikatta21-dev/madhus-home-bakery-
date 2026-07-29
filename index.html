@@ -1,110 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madhus Home Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhus Home Bakery</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff5f0;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff5f0;
+}
 
-    header {
-      background: linear-gradient(45deg, #ff6b6b, #ff9a9e);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+/* Header */
+header {
+    background: linear-gradient(45deg,#ff6b6b,#ff9a9e);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    nav {
-      background: #ff8e8e;
-      padding: 12px;
-      text-align: center;
-    }
+/* Navbar */
+nav {
+    background: #ff8e8e;
+    padding: 12px;
+    text-align: center;
+}
 
-    nav a {
-      color: white;
-      margin: 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav a {
+    color: white;
+    margin: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    section {
-      padding: 20px;
-    }
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://images.unsplash.com/photo-1542826438-bd32f43d626f') no-repeat center/cover;
+    color: white;
+}
 
-    h2 {
-      color: #ff6b6b;
-    }
+.hero h1 {
+    font-size: 42px;
+}
 
-    .item {
-      background: white;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
+/* Section */
+.section {
+    padding: 40px;
+    text-align: center;
+}
 
-    footer {
-      background: #ff6b6b;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #ff6b6b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>Madhus Home Bakery</h1>
-  <p>Fresh & Homemade Delicious Items</p>
+    <h1>Madhus Home Bakery 🍰</h1>
+    <p>Fresh Homemade Delicious Items</p>
 </header>
 
 <nav>
-  <a href="#cakes">Cakes</a>
-  <a href="#cookies">Cookies</a>
-  <a href="#chocolates">Chocolates</a>
-  <a href="#sweets">Sweets</a>
-  <a href="#hot">Hot Items</a>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<section id="cakes">
-  <h2>Cakes</h2>
-  <div class="item">Chocolate Cake - ₹500</div>
-  <div class="item">Vanilla Cake - ₹450</div>
+<section class="hero">
+    <h1>Welcome to Madhus Bakery</h1>
+    <p>Order Fresh Cakes & Snacks Anytime</p>
+    <a class="btn" href="https://wa.me/919347698049">Order on WhatsApp</a>
 </section>
 
-<section id="cookies">
-  <h2>Cookies</h2>
-  <div class="item">Choco Chip Cookies - ₹200</div>
+<section id="menu" class="section">
+    <h2>Our Menu</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599785209707-28b5b6a6b0c4">
+            <h3>Cakes 🎂</h3>
+            <p>Starting from ₹500</p>
+            <a class="btn" href="https://wa.me/919347698049">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
+            <h3>Cookies 🍪</h3>
+            <p>₹150 per box</p>
+            <a class="btn" href="https://wa.me/919347698049">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+            <h3>Chocolates 🍫</h3>
+            <p>₹200 onwards</p>
+            <a class="btn" href="https://wa.me/919347698049">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1625944235935-4a6c5d8e5f80">
+            <h3>Donuts 🍩</h3>
+            <p>₹60 each</p>
+            <a class="btn" href="https://wa.me/919347698049">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908176997-431dc61b9a6c">
+            <h3>Sweets 🍬</h3>
+            <p>₹250 per kg</p>
+            <a class="btn" href="https://wa.me/919347698049">Order Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604908812363-6a0f1f0f7f63">
+            <h3>Hot Items 🔥</h3>
+            <p>Starting ₹100</p>
+            <a class="btn" href="https://wa.me/919347698049">Order Now</a>
+        </div>
+
+    </div>
 </section>
 
-<section id="chocolates">
-  <h2>Chocolates</h2>
-  <div class="item">Homemade Chocolates - ₹300</div>
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>📞 9347698049</p>
+    <p>📍 Kalidindi</p>
+    <p>📸 Instagram: @madhushomebakery</p>
 </section>
+</head>
 
-<section id="sweets">
-  <h2>Sweets</h2>
-  <div class="item">Laddu - ₹250/kg</div>
-  <div class="item">Kaju Sweet - ₹400/kg</div>
-</section>
+<body>
 
-<section id="hot">
-  <h2>Hot Items</h2>
-  <div class="item">Boondi - ₹150</div>
-  <div class="item">Janthikalu - ₹200</div>
-  <div class="item">Palli Pakodi - ₹150</div>
-  <div class="item">Kaju Fry - ₹300</div>
-  <div class="item">Chakralu - ₹200</div>
-</section>
+<header>
+    <h1>Madhus Home Bakery</h1>
+    <p>Fresh Cakes & Sweets</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="section">
+    <h2>Our Items</h2>
+    <p>Cakes, Cookies, Sweets, Hot Items Available</p>
+</div>
+
+
 
 <footer>
-  <p>📞 Contact: 9347698049</p>
+    <p>© 2026 Madhus Home Bakery | All Rights Reserved</p>
 </footer>
 
 </body>
