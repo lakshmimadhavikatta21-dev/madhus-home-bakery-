@@ -7,192 +7,102 @@
 
 <style>
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #fff5f0;
+  margin:0;
+  font-family:sans-serif;
+  background:#fff5f0;
+  text-align:center;
 }
 
-/* Header */
 header {
-    background: linear-gradient(45deg,#ff6b6b,#ff9a9e);
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background:#ff6b6b;
+  color:white;
+  padding:15px;
 }
 
-/* Logo */
-.logo {
-    font-size: 38px;
-    font-family: 'Brush Script MT', cursive;
-    letter-spacing: 2px;
-}
-
-/* Navbar */
 nav {
-    background: #ff8e8e;
-    padding: 12px;
-    text-align: center;
+  background:#ff8e8e;
+  padding:10px;
 }
 
 nav a {
-    color: white;
-    margin: 12px;
-    text-decoration: none;
-    font-weight: bold;
+  color:white;
+  margin:10px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
-/* Hero */
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: url('https://images.unsplash.com/photo-1542826438-bd32f43d626f') no-repeat center/cover;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 42px;
-}
-
-/* Section */
 .section {
-    padding: 40px;
-    text-align: center;
+  padding:20px;
 }
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 20px;
-}
-
-/* Card */
 .card {
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
-    transition: 0.3s;
+  background:white;
+  margin:10px;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 0 10px #ccc;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Button */
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* Footer */
-footer {
-    background: #ff6b6b;
-    color: white;
-    text-align: center;
-    padding: 20px;
+button {
+  background:#25D366;
+  color:white;
+  border:none;
+  padding:10px;
+  border-radius:5px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-<h1 class="logo">Madhus' Home Bakery 🍰</h1>
+<h1>Madhus' Home Bakery 🍰</h1>
 <p>Fresh Homemade Delicious Items</p>
 </header>
 
 <nav>
 <a href="#">Home</a>
 <a href="#menu">Menu</a>
-<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-<h1>Welcome to Madhus Bakery</h1>
+<div class="section">
+<h2>Welcome</h2>
 <p>Order Fresh Cakes & Snacks Anytime</p>
-<a class="btn" href="https://wa.me/919347698049?text=Hi%20I%20want%20to%20order%20from%20Madhus%20Home%20Bakery">Order on WhatsApp</a>
-</section>
 
-<section id="menu" class="section">
-<h2>Our Menu</h2>
-
-<div class="products">
-
-<div class="card">
-<h3>Cakes 🎂</h3>
-<p>Starting from ₹500</p>
-<a class="btn" href="https://wa.me/919347698049">Order Now</a>
+<a href="https://wa.me/919347698049?text=Hi%20I%20want%20to%20order">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
-<div class="card">
-<h3>Cookies 🍪</h3>
-<p>₹150 per box</p>
-<a class="btn" href="https://wa.me/919347698049">Order Now</a>
-</div>
+<div id="menu" class="section">
+<h2>Menu</h2>
 
-<div class="card">
-<h3>Chocolates 🍫</h3>
-<p>₹200 onwards</p>
-<a class="btn" href="https://wa.me/919347698049">Order Now</a>
-</div>
-
-<div class="card">
-<h3>Donuts 🍩</h3>
-<p>₹60 each</p>
-<a class="btn" href="https://wa.me/919347698049">Order Now</a>
-</div>
-
-<div class="card">
-<h3>Sweets 🍬</h3>
-<p>₹250 per kg</p>
-<a class="btn" href="https://wa.me/919347698049">Order Now</a>
-</div>
-
-<div class="card">
-<h3>Hot Items 🔥</h3>
-<p>Starting ₹100</p>
-<a class="btn" href="https://wa.me/919347698049">Order Now</a>
-</div>
+<div class="card">Cakes 🎂 - ₹450</div>
+<div class="card">Cookies 🍪 - ₹600</div>
+ <div class="card"brownie  -  ₹1000</div
+    <div class="card">kunfa Chocolates 🍫 - ₹200</div>
+<div class="card">Donuts 🍩 - ₹60</div>
+<div class="card">Sweets  - ₹400/kg</div>
+<div class="card">Hot Items 🔥 - ₹300+</div>
 
 </div>
-</section>
 
-<section id="reviews" class="section">
-<h2>Customer Reviews ⭐</h2>
-<p>⭐⭐⭐⭐⭐ Very tasty cakes!</p>
-<p>⭐⭐⭐⭐⭐ Best homemade sweets in Kalidindi</p>
-<p>⭐⭐⭐⭐⭐ Fresh & hygienic food</p>
-</section>
+<div class="section">
+<h2>Reviews ⭐</h2>
+<p>⭐⭐⭐⭐⭐ Very tasty cakes</p>
+<p>⭐⭐⭐⭐⭐ Fresh homemade food</p>
+</div>
 
-<section class="section">
-<h2>Our Location 📍</h2>
-<iframe 
-src="https://maps.google.com/maps?q=kalidindi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="250">
-</iframe>
-</section>
-
-<section id="contact" class="section">
-<h2>Contact Us</h2>
+<div id="contact" class="section">
+<h2>Contact</h2>
 <p>📞 9347698049</p>
 <p>📍 Kalidindi</p>
-<p>📸 <a href="https://instagram.com/" target="_blank">@madhushomebakery</a></p>
-</section>
+<p>📸 Instagram: @madhushomebakery</p>
+</div>
 
-<footer>
-<p>© 2026 Madhus' Home Bakery</p>
+<footer style="background:#ff6b6b;color:white;padding:10px;">
+© 2026 Madhus' Home Bakery
 </footer>
 
 </body>
