@@ -3,179 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madhus Home Bakery</title>
+<title>Madhus' Home Bakery</title>
 
 <style>
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff8f5;
+  margin:0;
+  font-family:sans-serif;
+  background:#fff5f0;
+  text-align:center;
 }
 
-/* HEADER */
 header {
-    background: #ff6f61;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background:#ff6b6b;
+  color:white;
+  padding:15px;
 }
 
 nav {
-    background: #ff8a75;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
+  background:#ff8e8e;
+  padding:10px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color:white;
+  margin:10px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
-/* SECTIONS */
 .section {
-    padding: 20px;
+  padding:20px;
 }
 
-h2 {
-    text-align: center;
-}
-
-/* MENU CARDS */
 .card {
-    background: #fff;
-    margin: 15px auto;
-    padding: 15px;
-    border-radius: 15px;
-    width: 90%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
+  background:white;
+  margin:10px;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 0 10px #ccc;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* BUTTON */
-.btn {
-    display: inline-block;
-    background: #ff6f61;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-/* FOOTER */
-footer {
-    background: #ff6f61;
-    color: white;
-    text-align: center;
-    padding: 10px;
+button {
+  background:#25D366;
+  color:white;
+  border:none;
+  padding:10px;
+  border-radius:5px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <h1>Madhus' Home Bakery 🍰</h1>
-    <p>Fresh Homemade Delicious Items</p>
+<h1>Madhus' Home Bakery 🍰</h1>
+<p>Fresh Homemade Delicious Items</p>
 </header>
 
 <nav>
-    <a href="#menu">Menu</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#order">Order</a>
-    <a href="#contact">Contact</a>
+<a href="#">Home</a>
+<a href="#menu">Menu</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<!-- MENU -->
+<div class="section">
+<h2>Welcome</h2>
+<p>Order Fresh Cakes & Snacks Anytime</p>
+
+<a href="https://wa.me/919347698049?text=Hi%20I%20want%20to%20order">
+<button>Order on WhatsApp</button>
+</a>
+</div>
+
 <div id="menu" class="section">
 <h2>Menu</h2>
 
-<div class="card">
-<img src="cake.jpg">
-<h3>Cakes 🎂 - ₹450</h3>
-</div>
-
-<div class="card">
-<img src="cookies.jpg">
-<h3>Cookies 🍪 - ₹150 (250g)</h3>
-</div>
-
-<div class="card">
-<img src="drycake.jpg">
-<h3>Dry Cakes 🍰 - ₹500/kg</h3>
-</div>
-
-<div class="card">
-<img src="donut.jpg">
-<h3>Donuts 🍩 - ₹50</h3>
-</div>
-
-<div class="card">
-<img src="sweet.jpg">
-<h3>Sweets 🍬 - ₹200/kg</h3>
-</div>
-
-<div class="card">
-<img src="hot.jpg">
-<h3>Hot Items 🔥 - ₹100 onwards</h3>
-</div>
+<div class="card">Cakes 🎂 - ₹500</div>
+<div class="card">Cookies 🍪 - ₹150</div>
+<div class="card">Chocolates 🍫 - ₹200</div>
+<div class="card">Donuts 🍩 - ₹60</div>
+<div class="card">Sweets 🍬 - ₹250/kg</div>
+<div class="card">Hot Items 🔥 - ₹100+</div>
 
 </div>
 
-<!-- GALLERY -->
-<div id="gallery" class="section">
-<h2>Gallery</h2>
-
-<div class="card">
-<img src="cake.jpg">
+<div class="section">
+<h2>Reviews ⭐</h2>
+<p>⭐⭐⭐⭐⭐ Very tasty cakes</p>
+<p>⭐⭐⭐⭐⭐ Fresh homemade food</p>
 </div>
 
-<div class="card">
-<img src="cookies.jpg">
-</div>
-
-<div class="card">
-<img src="donut.jpg">
-</div>
-
-</div>
-
-<!-- ORDER -->
-<div id="order" class="section">
-<h2>Order Now</h2>
-
-<p style="text-align:center;">Click below to order on WhatsApp</p>
-
-<div style="text-align:center;">
-<a class="btn" href="https://wa.me/919347698049">Order on WhatsApp</a>
-</div>
-
-</div>
-
-<!-- CONTACT -->
 <div id="contact" class="section">
-<h2>Contact Us</h2>
-
-<p>📞 Phone: <a href="tel:9347698049">9347698049</a></p>
-
-<p>💬 WhatsApp: 
-<a href="https://wa.me/919347698049">Chat Now</a></p>
-
-<p>📍 Address: Kalidindi, Andhra Pradesh</p>
-
+<h2>Contact</h2>
+<p>📞 9347698049</p>
+<p>📍 Kalidindi</p>
+<p>📸 Instagram: @madhushomebakery</p>
 </div>
 
-<footer>
-<p>© 2026 Madhus Home Bakery</p>
+<footer style="background:#ff6b6b;color:white;padding:10px;">
+© 2026 Madhus' Home Bakery
 </footer>
 
 </body>
