@@ -1,62 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madhus' Home Bakery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body {
-  margin:0;
-  font-family:sans-serif;
-  background:#fff5f0;
-  text-align:center;
+  font-family: Arial;
+  margin: 0;
+  background: #fff8f5;
 }
 
+/* Header */
 header {
-  background:#ff6b6b;
-  color:white;
-  padding:15px;
+  background: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
+/* Navigation */
 nav {
-  background:#ff8e8e;
-  padding:10px;
+  background: #ff8a80;
+  padding: 10px;
+  text-align: center;
 }
 
 nav a {
-  color:white;
-  margin:10px;
-  text-decoration:none;
-  font-weight:bold;
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
+/* Section */
 .section {
-  padding:20px;
+  padding: 20px;
 }
 
-.card {
-  background:white;
-  margin:10px;
-  padding:15px;
-  border-radius:10px;
-  box-shadow:0 0 10px #ccc;
+/* Menu */
+.menu-item {
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-button {
-  background:#25D366;
-  color:white;
-  border:none;
-  padding:10px;
-  border-radius:5px;
-}h1 {
-  font-size: 38px;
+.menu-item img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 28px;
-  }
+/* Gallery */
+.gallery img {
+  width: 100%;
+  max-width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Reviews */
+.review {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.btn {
+  background: #25D366;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 </style>
 </head>
@@ -69,145 +109,105 @@ button {
 </header>
 
 <nav>
-<a href="#">Home</a>
 <a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#order">Order</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="section">
-<h2>Welcome</h2>
-<p>Order Fresh Cakes & Snacks Anytime</p>
-
-<a href="https://wa.me/919347698049?text=Hi%20I%20want%20to%20order">
-<button>Order on WhatsApp</button>
-</a>
-</div>
-
+<!-- MENU -->
 <div id="menu" class="section">
 <h2>Menu</h2>
-<div class="card">
-  <img src="images/cakes.jpg" alt="Cakes">
-  <p>Cakes 🍰 - ₹450</p>
-</div>
-<div class="card">
-  <img src="images/cookies.jpg" alt="Cookies">
-  <p>Cookies 🍪 - ₹600</p>
-</div>
-<div class="card">
-  <img src="images/dry-cakes.jpg" alt="Dry Cakes">
-  <p>Dry Cakes 🍰 - ₹500/kg</p>
-</div>
-    <div class="card">
-  <img src="images/brownies.jpg" alt="Brownies">
-  <p>Brownies 🍫 - ₹1000/kg</p>
-    </div>
-<div class="card">
-  <img src="images/kunfa-chocolates.jpg" alt="Kunfa Chocolates">
-  <p>Kunfa Chocolates 🍫 - ₹200</p>
-</div>
-  <div class="card">
-  <img src="images/donuts.jpg" alt="Donuts">
-  <p>Donuts 🍩 - ₹60/pc</p>
-  </div>
-  <div class="card">
-  <img src="images/all-chocolate-bars.jpg" alt="All Chocolate Bars">
-  <p>All Chocolate Bars Available 🍫</p>
-  </div>
 
-<section id="sweets">
-  <h2>Traditional Sweets</h2>
-
-  <img src="images/sweets.jpg" alt="Traditional Sweets">
-
-  <div class="card"><p>Kaja - ₹400/kg</p></div>
-  <div class="card"><p>Badusha - ₹400/kg</p></div>
-  <div class="card"><p>Rasgulla - ₹400/kg</p></div>
-  ...
-</section>
-  
-
-  <div class="card"><p>Dry Rasgulla – ₹450/kg</p></div>
-  <div class="card"><p>Gavvalu – ₹400/kg</p></div>
-  <div class="card"><p>Bellam Gavvalu – ₹450/kg</p></div>
-  <div class="card"><p>Kajjikayalu – ₹600/kg</p></div>
-  <div class="card"><p>Gulab Jamun – ₹450/kg</p></div>
-  <div class="card"><p>Mysore Pak – ₹500/kg</p></div>
-  <div class="card"><p>Milk Mysore Pak – ₹700/kg</p></div>
-  <div class="card"><p>Boondi Laddu – ₹400/kg</p></div>
-  <div class="card"><p>Rava Laddu – ₹500/kg</p></div>
-  <div class="card"><p>Kobbari Laddu – ₹400/kg</p></div>
-  <div class="card"><p>Besan Laddu – ₹500/kg</p></div>
-  <div class="card"><p>Motichoor Laddu – ₹450/kg</p></div>
-  <div class="card"><p>Peanut Laddu – ₹400/kg</p></div>
-  <div class="card"><p>Dry Fruit Laddu – ₹950/kg</p></div>
-  <div class="card"><p>Malai Laddu – ₹900/kg</p></div>
-  <div class="card"><p>Sunnundalu – ₹800/kg</p></div>
-  <div class="card"><p>Bellam Sunnundalu – ₹900/kg</p></div>
-  <div class="card"><p>Kaju Katli – ₹900/kg</p></div>
-  <div class="card"><p>Kaju Cheki – ₹950/kg</p></div>
-  <div class="card"><p>Doodh Peda – ₹800/kg</p></div>
-  <div class="card"><p>Kaju Pista Rolls – ₹900/kg</p></div>
-  <div class="card"><p>Bobbatlu – ₹20/Piece</p></div>
-</section>
-<!-- Hot Items Section -->
-<section id="hot-items" class="products">
-  <h2>Hot Items</h2>
-
-  <div class="product-card">
-    <img src="images/boondi.jpg" alt="Boondi">
-    <h3>Boondi</h3>
-    <p>Fresh and crispy traditional boondi.</p>
-  </div>
-
-  <div class="product-card">
-    <img src="images/ganthikalu.jpg" alt="Ganthikalu">
-    <h3>Ganthikalu</h3>
-    <p>Crunchy homemade ganthikalu made with quality ingredients.</p>
-  </div>
-
-  <div class="product-card">
-    <img src="images/atukula-mixture.jpg" alt="Atukula Mixture">
-    <h3>Atukula Mixture</h3>
-    <p>Tasty and spicy Andhra-style atukula mixture.</p>
-  </div>
-
-  <div class="product-card">
-    <img src="images/murukulu.jpg" alt="Murukulu">
-    <h3>Murukulu</h3>
-    <p>Freshly prepared crispy murukulu.</p>
-  </div>
-
-  <div class="product-card">
-    <img src="images/chegodilu.jpg" alt="Chegodilu">
-    <h3>Chegodilu</h3>
-    <p>Traditional crunchy chegodilu made at home.</p>
-  </div>
-
-  <div class="product-card">
-    <img src="images/karapusa.jpg" alt="Karapusa">
-    <h3>Karapusa</h3>
-    <p>Spicy and crispy karapusa snack.</p>
-  </div>
-</section>
-
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1605478039836-b59c3f9e5e0e">
+<p>Cakes 🍰 - ₹450</p>
 </div>
 
-<div class="section">
-<h2>Reviews ⭐</h2>
-<p>⭐⭐⭐⭐⭐ Very tasty cakes</p>
-<p>⭐⭐⭐⭐⭐ Fresh homemade food</p>
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1599785209707-28b4a1c4bcb0">
+<p>Cookies 🍪 - ₹600</p>
 </div>
 
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec">
+<p>Dry Cakes 🍰 - ₹500/kg</p>
+</div>
+
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+<p>Brownies 🍫 - ₹1000/kg</p>
+</div>
+
+<a class="btn" href="https://wa.me/919347698049">Order on WhatsApp</a>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery" class="section">
+<h2>Gallery</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1605478039836-b59c3f9e5e0e">
+<img src="https://images.unsplash.com/photo-1599785209707-28b4a1c4bcb0">
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec">
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+</div>
+</div>
+
+<!-- ORDER FORM -->
+<div id="order" class="section">
+<h2>Order Now 🛒</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+<input type="text" id="item" placeholder="Item (Cake, Cookies...)">
+<input type="number" id="qty" placeholder="Quantity">
+
+<button onclick="sendOrder()" class="btn">Place Order</button>
+</div>
+
+<!-- CONTACT -->
 <div id="contact" class="section">
-<h2>Contact</h2>
-<p>📞 9347698049</p>
-<p>📍 Kalidindi</p>
-<p>📸 Instagram: @madhushomebakery</p>
+<h2>Contact Us</h2>
+
+<p>📞 Phone: <a href="tel:9347698049">9347698049</a></p>
+
+<p>💬 WhatsApp: 
+<a href="https://wa.me/919347698049">Chat Now</a>
+</p>
+
+<p>📸 Instagram: 
+<a href="https://instagram.com/">Follow Us</a>
+</p>
+
+<p>📍 Address: Kalidindi, Andhra Pradesh</p>
+
+<iframe 
+src="https://maps.google.com/maps?q=Kalidindi%20Andhra%20Pradesh&z=13&output=embed"
+width="100%" height="250" style="border-radius:10px;">
+</iframe>
+
 </div>
 
-<footer style="background:#ff6b6b;color:white;padding:10px;">
-© 2026 Madhus' Home Bakery
+<footer>
+<p>© 2026 Madhus Home Bakery</p>
 </footer>
+
+<script>
+function sendOrder() {
+  var name = document.getElementById("name").value;
+  var item = document.getElementById("item").value;
+  var qty = document.getElementById("qty").value;
+
+  var message = "Hello, I want to order:\n"
+              + "Name: " + name + "\n"
+              + "Item: " + item + "\n"
+              + "Quantity: " + qty;
+
+  var url = "https://wa.me/919347698049?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
