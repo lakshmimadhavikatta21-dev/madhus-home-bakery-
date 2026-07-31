@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,136 +8,200 @@
 
 <style>
 body {
-  margin:0;
-  font-family:Arial;
-  background:#fff5f0;
-  text-align:center;
+    margin: 0;
+    font-family: Arial;
+    background: #fff8f0;
 }
 
 header {
-  background:#ff4d6d;
-  color:white;
-  padding:20px;
+    background: linear-gradient(to right, #ff6b6b, #ff9a9e);
+    color: white;
+    text-align: center;
+    padding: 25px;
 }
 
 nav {
-  background:#ff8fa3;
-  padding:10px;
+    background: #333;
+    text-align: center;
+    padding: 10px;
 }
 
 nav a {
-  color:white;
-  margin:10px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.hero {
-  padding:20px;
-}
-
-.hero img {
-  width:90%;
-  max-width:400px;
-  border-radius:10px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 section {
-  padding:20px;
+    padding: 20px;
+    text-align: center;
 }
 
 h2 {
-  color:#ff4d6d;
+    color: #ff6b6b;
 }
 
-.menu p {
-  background:white;
-  margin:8px;
-  padding:10px;
-  border-radius:8px;
-  box-shadow:0 0 5px gray;
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 button {
-  background:green;
-  color:white;
-  padding:12px 20px;
-  border:none;
-  border-radius:6px;
-  font-size:16px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff3b3b;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
 footer {
-  background:#ff4d6d;
-  color:white;
-  padding:10px;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 </style>
+
+<script>
+function order(){
+  window.open("https://wa.me/919347698049", "_blank");
+}
+</script>
+
 </head>
 
 <body>
 
 <header>
 <h1>Madhus Home Bakery</h1>
-<p>Fresh Cakes, Cookies & Sweets 🎂</p>
+<p>Fresh Cakes, Brownies & Homemade Snacks</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#menu">Menu</a>
+<a href="#cakes">Cakes</a>
+<a href="#brownies">Brownies</a>
+<a href="#donuts">Donuts</a>
+<a href="#sweets">Sweets</a>
+<a href="#hot">Hot</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero">
-<img src="https://images.unsplash.com/photo-1605478900064-3b7c6d54c1c4" alt="cakes">
+<section id="cakes">
+<h2>🎂 Cakes</h2>
+<div class="products">
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?cake">
+<h3>Chocolate Cake</h3>
+<p>₹800</p>
+<button onclick="order()">Order</button>
 </div>
-
-<section id="menu">
-<h2>Our Menu</h2>
-
-<div class="menu">
-<h3>Cakes</h3>
-<p>Chocolate Cake - ₹500</p>
-<p>Vanilla Cake - ₹450</p>
-
-<h3>Dry Cakes</h3>
-<p>Plum Cake - ₹300</p>
-
-<h3>Cookies</h3>
-<p>Choco Chip Cookies - ₹200</p>
-
-<h3>Chocolates</h3>
-<p>Homemade Chocolates - ₹250</p>
-
-<h3>Brownies</h3>
-<p>Chocolate Brownie - ₹150</p>
-
-<h3>Donuts</h3>
-<p>Glazed Donut - ₹120</p>
-
-<h3>Bombolones</h3>
-<p>Cream Bombolone - ₹130</p>
-
-<h3>Sweets</h3>
-<p>Laddu - ₹200/kg</p>
-
-<h3>Hot Items</h3>
-<p>Boondi - ₹180/kg</p>
-<p>Jantikalu - ₹200/kg</p>
 </div>
+</section>
 
+<section id="brownies">
+<h2>🍫 Brownies</h2>
+<div class="products">
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?brownie">
+<h3>Chocolate Brownie</h3>
+<p>₹90</p>
+<button onclick="order()">Order</button>
+</div>
+</div>
+</section>
+
+<section id="donuts">
+<h2>🍩 Donuts & Bombolones</h2>
+<div class="products">
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?donut">
+<h3></h3>Donut</h3>
+<p>₹80</p>
+<button onclick="order()">Order</button>
+</div>
+</div>
+</section>
+
+<section id="sweets">
+<h2>🍬 Sweets</h2>
+<div class="products">
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?laddu">
+<h3>Laddu</h3>
+<p>₹400/kg</p>
+<button onclick="order()">Order</button>
+</div>
+</div>
+</section>
+
+<section id="hot">
+<h2>🔥 Hot Items</h2>
+<div class="products">
+<div class="card">
+<img src="https://source.unsplash.com/300x200/?snacks">
+<h3>Jantikalu</h3>
+<p>₹350/kg</p>
+<button onclick="order()">Order</button>
+</div>
+</div>
 </section>
 
 <section id="contact">
-<h2>Contact Us</h2>
-<p>📞 Phone / WhatsApp: 9347698049</p>
-<p>📍 Address: Kalidindi</p>
+<h2>📞 Contact</h2>
+<p>Phone / WhatsApp: 9347698049</p>
+<p>Address: Kalidindi</p>
 
-<a href="https://wa.me/919347698049" target="_blank">
-<button>Order on WhatsApp</button>
-</a>
+<iframe class="map"
+src="https://maps.google.com/maps?q=kalidindi&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 </section>
+
+<a class="whatsapp" href="https://wa.me/919347698049">Order Now</a>
 
 <footer>
 <p>© 2026 Madhus Home Bakery</p>
