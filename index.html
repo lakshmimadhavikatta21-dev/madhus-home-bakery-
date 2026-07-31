@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madhus' Home Bakery</title>
+<title>Madhus Home Bakery</title>
 
 <style>
 body {
   margin:0;
-  font-family:sans-serif;
+  font-family:Arial;
   background:#fff5f0;
   text-align:center;
 }
 
 header {
-  background:#ff6b6b;
+  background:#ff4d6d;
   color:white;
-  padding:15px;
+  padding:20px;
 }
 
 nav {
-  background:#ff8e8e;
+  background:#ff8fa3;
   padding:10px;
 }
 
@@ -31,24 +31,45 @@ nav a {
   font-weight:bold;
 }
 
-.section {
+.hero {
   padding:20px;
 }
 
-.card {
-  background:white;
-  margin:10px;
-  padding:15px;
+.hero img {
+  width:90%;
+  max-width:400px;
   border-radius:10px;
-  box-shadow:0 0 10px #ccc;
+}
+
+section {
+  padding:20px;
+}
+
+h2 {
+  color:#ff4d6d;
+}
+
+.menu p {
+  background:white;
+  margin:8px;
+  padding:10px;
+  border-radius:8px;
+  box-shadow:0 0 5px gray;
 }
 
 button {
-  background:#25D366;
+  background:green;
   color:white;
+  padding:12px 20px;
   border:none;
+  border-radius:6px;
+  font-size:16px;
+}
+
+footer {
+  background:#ff4d6d;
+  color:white;
   padding:10px;
-  border-radius:5px;
 }
 </style>
 </head>
@@ -56,8 +77,8 @@ button {
 <body>
 
 <header>
-<h1>Madhus' Home Bakery 🍰</h1>
-<p>Fresh Homemade Delicious Items</p>
+<h1>Madhus Home Bakery</h1>
+<p>Fresh Cakes, Cookies & Sweets 🎂</p>
 </header>
 
 <nav>
@@ -66,42 +87,59 @@ button {
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="section">
-<h2>Welcome</h2>
-<p>Order Fresh Cakes & Snacks Anytime</p>
+<div class="hero">
+<img src="https://images.unsplash.com/photo-1605478900064-3b7c6d54c1c4" alt="cakes">
+</div>
 
-<a href="https://wa.me/919347698049?text=Hi%20I%20want%20to%20order">
+<section id="menu">
+<h2>Our Menu</h2>
+
+<div class="menu">
+<h3>Cakes</h3>
+<p>Chocolate Cake - ₹800</p>
+<p>Vanilla Cake - ₹750</p>
+
+<h3>Dry Cakes</h3>
+<p>Plum Cake - ₹1000</p>
+
+<h3>Cookies</h3>
+<p>Choco Chip Cookies - ₹200</p>
+
+<h3>Chocolates</h3>
+<p>Homemade Chocolates - ₹250</p>
+
+<h3>Brownies</h3>
+<p>Chocolate Brownie - ₹150</p>
+
+<h3>Donuts</h3>
+<p>Glazed Donut - ₹120</p>
+
+<h3>Bombolones</h3>
+<p>Cream Bombolone - ₹130</p>
+
+<h3>Sweets</h3>
+<p>Laddu - ₹200/kg</p>
+
+<h3>Hot Items</h3>
+<p>Boondi - ₹180/kg</p>
+<p>Jantikalu - ₹200/kg</p>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>📞 Phone / WhatsApp: 9347698049</p>
+<p>📍 Address: Kalidindi</p>
+
+<a href="https://wa.me/919347698049" target="_blank">
 <button>Order on WhatsApp</button>
 </a>
-</div>
 
-<div id="menu" class="section">
-<h2>Menu</h2>
+</section>
 
-<div class="card">Cakes 🎂 - ₹500</div>
-<div class="card">Cookies 🍪 - ₹150</div>
-<div class="card">Chocolates 🍫 - ₹200</div>
-<div class="card">Donuts 🍩 - ₹60</div>
-<div class="card">Sweets 🍬 - ₹250/kg</div>
-<div class="card">Hot Items 🔥 - ₹100+</div>
-
-</div>
-
-<div class="section">
-<h2>Reviews ⭐</h2>
-<p>⭐⭐⭐⭐⭐ Very tasty cakes</p>
-<p>⭐⭐⭐⭐⭐ Fresh homemade food</p>
-</div>
-
-<div id="contact" class="section">
-<h2>Contact</h2>
-<p>📞 9347698049</p>
-<p>📍 Kalidindi</p>
-<p>📸 Instagram: @madhushomebakery</p>
-</div>
-
-<footer style="background:#ff6b6b;color:white;padding:10px;">
-© 2026 Madhus' Home Bakery
+<footer>
+<p>© 2026 Madhus Home Bakery</p>
 </footer>
 
 </body>
