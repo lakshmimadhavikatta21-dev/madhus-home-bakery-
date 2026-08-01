@@ -5,23 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {margin:0;font-family:Arial;background:#fff;}
+body {margin:0;font-family:Arial;background:#f8f8f8;}
+
 header {
   background:#ff4d6d;
   color:white;
   padding:15px;
   text-align:center;
 }
+
 nav {
   background:#333;
   padding:10px;
   text-align:center;
 }
+
 nav a {
   color:white;
   margin:10px;
   text-decoration:none;
+  font-weight:bold;
 }
+
 .banner {
   background:url('https://images.unsplash.com/photo-1608198093002-ad4e005484ec') center/cover;
   height:250px;
@@ -32,32 +37,52 @@ nav a {
   font-size:28px;
   font-weight:bold;
 }
+
 .products {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
   gap:15px;
   padding:20px;
 }
+
 .card {
-  background:#fff;
+  background:white;
   border-radius:10px;
   box-shadow:0 0 10px #ccc;
   text-align:center;
   padding:10px;
+  transition:0.3s;
 }
+
+.card:hover {
+  transform:scale(1.05);
+}
+
 .card img {
   width:100%;
   height:180px;
   border-radius:10px;
+  object-fit:cover;
 }
-.price {color:green;font-weight:bold;}
+
+.price {
+  color:green;
+  font-weight:bold;
+}
+
 button {
   background:#ff4d6d;
   color:white;
   padding:8px;
   border:none;
   border-radius:5px;
+  cursor:pointer;
 }
+
+button:hover {
+  background:#e6004c;
+}
+
 .footer {
   background:#333;
   color:white;
@@ -70,61 +95,102 @@ button {
 <body>
 
 <header>
-<h1>Madhus Home Bakery</h1>
-<p>Fresh Cakes, Cookies & Sweets 🍰</p>
+<h1>🍰 Madhus Home Bakery</h1>
+<p>Fresh Cakes, Sweets, Hots & Pickles 😋</p>
 </header>
 
 <nav>
 <a href="#">Home</a>
 <a href="#">Cakes</a>
 <a href="#">Cookies</a>
-<a href="#">Brownies</a>
-<a href="#">Contact</a>
+<a href="#">Chocolates</a>
+<a href="#">Sweets</a>
+<a href="#">Hots</a>
+<a href="#">Pickles</a>
 </nav>
 
 <div class="banner">
-Order Fresh Homemade Cakes 🎂
+Order Fresh Homemade Items 🎂
 </div>
 
 <div class="products">
 
+<!-- Cakes -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1599785209707-28b2c1c1a7d7">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
 <h3>Chocolate Cake</h3>
 <p class="price">₹500</p>
-<button>Order</button>
+<button onclick="order()">Order</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b">
+<img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35">
 <h3>Cookies</h3>
 <p class="price">₹200</p>
-<button>Order</button>
+<button onclick="order()">Order</button>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52">
 <h3>Brownies</h3>
 <p class="price">₹300</p>
-<button>Order</button>
+<button onclick="order()">Order</button>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0">
 <h3>Donuts</h3>
 <p class="price">₹250</p>
-<button>Order</button>
+<button onclick="order()">Order</button>
 </div>
+
+<!-- Chocolates -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511381939415-e44015466834">
+<h3>Chocolates</h3>
+<p class="price">₹350</p>
+<button onclick="order()">Order</button>
+</div>
+
+<!-- Sweets -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950"?w=400
+<h3>Sweets</h3>
+<p class="price">₹400</p>
+<button onclick="order()">Order</button>
+</div>
+  <div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-4310c2e4b2e2?w=400" alt="Hots">
+  <h3>Hots</h3>
+  <p class="price">₹150</p>
+  <button onclick="order()">Order</button>
+</div>
+  
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1625944525903-cabf3d1cb90d?w=400" alt="Pickles">
+  <h3>Pickles</h3>
+  <p class="price">₹250</p>
+  <button onclick="order()">Order</button>
+</div></div>
+
+
+
+
 
 </div>
 
 <div class="footer">
 📞 9347698049 | 📍 Kalidindi  
 <br><br>
-<button onclick="window.location.href='https://wa.me/919347698049'">
-Order on WhatsApp
-</button>
+
+<button onclick="order()">Order on WhatsApp</button>
 </div>
+
+<script>
+function order(){
+  window.location.href = "https://wa.me/919347698049";
+}
+</script>
 
 </body>
 </html>
