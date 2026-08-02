@@ -1,266 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madhus" Home Bakery</title>
+  <title>Madhus Home Bakery</title>
 
-<style>
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #f5f5f5;
-}
+  <style>
+    body {
+      font-family: Arial;
+      background: #fff5f5;
+      text-align: center;
+      margin: 0;
+    }
 
-/* Header */
-header {
-  background: #ff4d6d;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
+    h1 {
+      background: #ff4d6d;
+      color: white;
+      padding: 15px;
+    }
 
-header h1 {
-  margin: 5px;
-}
+    .section {
+      margin: 30px;
+    }
 
-header p {
-  margin: 5px;
-}
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-/* Navbar */
-nav {
-  background: #333;
-  padding: 10px;
-  text-align: center;
-}
+    .item {
+      margin: 10px;
+      width: 180px;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ddd;
+    }
 
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
-/* Hero */
-.hero {
-  background: url('https://images.unsplash.com/photo-1509440159596-0249088772ff');
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 70px 20px;
-  font-size: 28px;
-}
+    button {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-/* Products */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  background: white;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.price {
-  color: green;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-button {
-  background: #ff4d6d;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background: #222;
-  color: white;
-  padding: 15px;
-}
-</style>
+    button:hover {
+      background: #1ebc57;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>🍰 Madhus" Home Bakery</h1>
-  <p>Fresh Cakes, Sweets, Hots & Pickles 😋</p>
-  <p style="font-weight:bold; font-size:16px; color:#fff;">
-🌿 Fresh Daily | 🚫 No Chemicals | 🚫 No Preservatives | 🏡 Homemade with Love 😘 💕 
-  </p>
-</header>
+<h1>🍰 Madhus Home Bakery</h1>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Cakes</a>
-  <a href="#">Cookies</a>
-  <a href="#">Chocolates</a>
-  <a href="#">Sweets</a>
-  <a href="#">Hots</a>
-</nav>
-
-<div class="hero">
-  Order Fresh Homemade Items 🎂
-</div>
-
-<div class="container">
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+<!-- CAKES -->
+<div class="section">
+<h2>🎂 Cakes</h2>
+<div class="items">
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1605478031069-b5e8d2d2d2f2">
     <h3>Chocolate Cake</h3>
-    <p class="price">₹500</p>
-    <a href="https://wa.me/919347698049?text=I%20want%20to%20order%20Chocolate%20Cake">
-      <button>Order</button>
-    </a>
+    <button onclick="order('Chocolate Cake')">Order</button>
   </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e">
-    <h3>Cookies</h3>
-    <p class="price">₹600</1/2kg>
-    <a href="https://wa.me/919347698049?text=I%20want%20to%20order%20Cookies">
-      <button>Order</button>
-    </a>
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+    <h3>Birthday Cake</h3>
+    <button onclick="order('Birthday Cake')">Order</button>
+  </div>
+</div>
+</div>
+
+<!-- COOKIES -->
+<div class="section">
+<h2>🍪 Cookies</h2>
+<div class="items">
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1590080877777-95c44a0dc8d0">
+    <h3>Chocolate Cookies</h3>
+    <button onclick="order('Chocolate Cookies')">Order</button>
   </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
-    <h3>Brownies</h3>
-    <p class="price">₹300</p>
-    <a href="https://wa.me/919347698049?text=I%20want%20to%20order%20Brownies">
-      <button>Order</button>
-    </a>
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
+    <h3>Butter Cookies</h3>
+    <button onclick="order('Butter Cookies')">Order</button>
   </div>
+</div>
+</div>
 
-  <div class="card">
+<!-- DONUTS -->
+<div class="section">
+<h2>🍩 Donuts</h2>
+<div class="items">
+  <div class="item">
     <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
-    <h3>Donuts</h3>
-    <p class="price">₹250</p>
-    <a href="https://wa.me/919347698049?text=I%20want%20to%20order%20Donuts">
-      <button>Order</button>
-    </a>
+    <h3>Glazed Donuts</h3>
+    <button onclick="order('Glazed Donuts')">Order</button>
   </div>
-<section id="chocolates">
-  <h2>Chocolates</h2>
 
-  <div class="items">
-
-    <!-- Dairy Milk Style -->
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52" alt="Chocolate">
-      <h3>Milk Chocolate</h3>
-    </div>
-
-    <!-- Dark Chocolate -->
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1582176604856-e824b4736522" alt="Dark Chocolate">
-      <h3>Dark Chocolate</h3>
-    </div>
-
-    <!-- Chocolate Pieces -->
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1511381939415-e44015466834" alt="Chocolate Pieces">
-      <h3>Chocolate Bites</h3>
-    </div>
-
-    <!-- Homemade Chocolate -->
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Homemade Chocolate">
-      <h3>Homemade Chocolate</h3>
-    </div>
-
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62">
+    <h3>Chocolate Donuts</h3>
+    <button onclick="order('Chocolate Donuts')">Order</button>
   </div>
-</section>
-  
+</div>
+</div>
 
-  <section id="sweets">
-  <h2>Our Sweets</h2>
-
-  <div class="items">
-
-    <!-- Laddu -->
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b8" alt="Laddu">
-      <h3>Laddu</h3>
-    </div>
-
-    <!-- Gulab Jamun -->
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa7d4b" alt="Gulab Jamun">
-      <h3>Gulab Jamun</h3>
-    </div>
-
-    <!-- Kaju Katli -->
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Kaju Katli">
-      <h3>Kaju Katli</h3>
-    </div>
-
-    <!-- Jalebi -->
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1631515242808-497c3fbd3970" alt="Jalebi">
-      <h3>Jalebi</h3>
-    </div>
-
+<!-- BOMBOLONES -->
+<div class="section">
+<h2>🍮 Bombolones</h2>
+<div class="items">
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f">
+    <h3>Cream Bombolones</h3>
+    <button onclick="order('Cream Bombolones')">Order</button>
   </div>
-  </section>
 
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1599785209707-28c1f65a4f82">
+    <h3>Chocolate Bombolones</h3>
+    <button onclick="order('Chocolate Bombolones')">Order</button>
+  </div>
+</div>
+</div>
 
-  <div class="card">
+<!-- SWEETS -->
+<div class="section">
+<h2>🍬 Sweets</h2>
+<div class="items">
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1631452180539-96aca7d48617">
+    <h3>Laddu</h3>
+    <button onclick="order('Laddu')">Order</button>
+  </div>
+
+  <div class="item">
     <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
-    <div class="card">
-  <img src="https://images.unsplash.com/photo-1604908554165-1b0c1e0e1c5b">
-  <h3>Boondi</h3>
-  <p>₹350/kg</p>
-  <button onclick="order('Boondi ₹350')">Order</button>
-</div>
-
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be">
-  <h3>Janthikalu</h3>
-  <p>₹300/kg</p>
-  <button onclick="order('Janthikalu ₹300')">Order</button>
-</div>
-
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1617196038433-0d1d8f2dcb68">
-  <h3>Beetroot Ganthikalu</h3>
-  <p>₹300/kg</p>
-  <button onclick="order('Beetroot Ganthikalu 
-</div>
-
-<div class="card">
-  <img src="https://images.unsplash.com/
-  <h3>Atukula Mixture</h3>
-  <p>₹3
-  <button onclick="order('Atukula Mixture ₹380')">Order</button>
-</div>
+    <h3>Jalebi</h3>
+    <button onclick="order('Jalebi')">Order</button>
   </div>
-  
+</div>
 </div>
 
-<footer>
-  📍 Kalidindi <br>
-  📞 9347698049 (WhatsApp Available)
-</footer>
+<!-- HOT ITEMS -->
+<div class="section">
+<h2>🔥 Hot Items</h2>
+<div class="items">
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+    <h3>Boondi Mixture</h3>
+    <button onclick="order('Boondi Mixture')">Order</button>
+  </div>
+
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1626078299032-c1a1c7c5d2c4">
+    <h3>Janthikalu</h3>
+    <button onclick="order('Janthikalu')">Order</button>
+  </div>
+
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a">
+    <h3>Beetroot Ganthikalu</h3>
+    <button onclick="order('Beetroot Ganthikalu')">Order</button>
+  </div>
+
+  <div class="item">
+    <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d">
+    <h3>Atukula Mixture</h3>
+    <button onclick="order('Atukula Mixture')">Order</button>
+  </div>
+</div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+function order(item) {
+  let phone = 9347698049"; // your WhatsApp number
+  let message = "Hi, I want to order " + item;
+  let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
