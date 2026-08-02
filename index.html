@@ -5,12 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madhus Home Bakery</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
@@ -20,190 +23,123 @@ color:#333;
 
 header{
 background:#8B4513;
-color:white;
+color:#fff;
 padding:20px;
 text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 header h1{
 font-size:36px;
 }
 
+header p{
+margin-top:8px;
+}
+
 nav{
-background:#d2691e;
-padding:12px;
-text-align:center;
+margin-top:15px;
 }
 
 nav a{
-color:white;
+color:#fff;
 text-decoration:none;
-margin:10px;
-font-weight:bold;
+margin:0 10px;
+font-weight:600;
 }
 
 .hero{
+height:400px;
 background:url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200") center/cover;
-height:350px;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-color:white;
 }
 
-.hero h2{
-background:rgba(0,0,0,.5);
-padding:15px;
-border-radius:10px;
-font-size:34px;
+.hero-content{
+background:rgba(0,0,0,.55);
+padding:25px;
+border-radius:12px;
+color:#fff;
 }
 
-.products{
-padding:40px 20px;
+.hero-content h2{
+font-size:40px;
+margin-bottom:10px;
 }
 
-.products h2{
-text-align:center;
-color:#8B4513;
-margin-bottom:25px;
+.hero-content p{
+font-size:18px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card h3{
-text-align:center;
-padding:10px;
-}
-
-.price{
-text-align:center;
-font-size:20px;
-color:#d2691e;
-font-weight:bold;
-padding-bottom:10px;
-}
-
-.order{
-display:block;
-width:80%;
-margin:15px auto;
-text-align:center;
+.btn{
+display:inline-block;
+margin-top:20px;
 background:#25D366;
-color:white;
-padding:10px;
+color:#fff;
+padding:12px 24px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
-}
-
-footer{
-background:#8B4513;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
-}
-</style>
-
+}</style>
 </head>
+
 <body>
 
 <header>
-<h1>🍰 Madhus Home Bakery</h1>
-<p>Fresh • Homemade • Delicious</p>
+  <h1>🍰 Madhus Home Bakery</h1>
+  <p>Fresh • Homemade • Delicious</p>
+
+  <nav>
+    <a href="#cakes">Cakes</a>
+    <a href="#cookies">Cookies</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Cakes</a>
-<a href="#">Cookies</a>
-<a href="#">Contact</a>
-</nav>
-
 <section class="hero">
-<h2>Welcome to Madhus Home Bakery ❤️</h2>
+  <div class="hero-content">
+    <h2>Welcome to Madhus Home Bakery ❤️</h2>
+    <p>Fresh Cakes, Cookies, Chocolates & More</p>
+
+    <a class="btn"
+       href="https://wa.me/919347698049"
+       target="_blank">
+       Order on WhatsApp
+    </a>
+  </div>
 </section>
 
-<section class="products">
-<h2>🎂 Cakes</h2>
+<section class="products" id="cakes">
+<h2 style="text-align:center;color:#8B4513;margin:30px 0;">
+🎂 Our Cakes
+</h2>
 
 <div class="grid">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600">
 <h3>Chocolate Cake</h3>
-<div class="price">₹800</div>
-<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?w=600">
-<h3>Red Velvet Cake</h3>
-<div class="price">₹1000</div>
-<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
+<p>₹600</p>
+<a class="btn" href="https://wa.me/919347698049">Order</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600">
 <h3>Butterscotch Cake</h3>
-<div class="price">₹800</div>
-<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
-</div>
-
-</div>
-
-</section>
-
-<section class="products">
-<h2>🍪 Cookies</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600">
-<h3>Chocolate Cookies</h3>
-<div class="price">₹180</div>
-<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
+<p>₹650</p>
+<a class="btn" href="https://wa.me/919347698049">Order</a>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600">
-<h3>Butter Cookies</h3>
-<div class="price">₹200</div>
-<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
+<img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?w=600">
+<h3>Red Velvet Cake</h3>
+<p>₹700</p>
+<a class="btn" href="https://wa.me/919347698049">Order</a>
 </div>
 
 </div>
-
 </section>
-
-<footer>
-<h3>📞 Call: 9347698049</h3>
-<p>© 2026 Madhus Home Bakery. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
