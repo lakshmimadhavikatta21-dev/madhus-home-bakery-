@@ -1,158 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Madhus Home Bakery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #f8f5f2;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhus Home Bakery</title>
 
-    header {
-      background: #5c3d2e;
-      color: white;
-      padding: 20px;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-    h2 {
-      color: #5c3d2e;
-    }
+body{
+background:#fff8f0;
+color:#333;
+}
 
-    .section {
-      padding: 20px;
-    }
+header{
+background:#8B4513;
+color:white;
+padding:20px;
+text-align:center;
+}
 
-    img {
-      width: 250px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
+header h1{
+font-size:36px;
+}
 
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: green;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 30px;
-      text-decoration: none;
-    }
-  </style>
+nav{
+background:#d2691e;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200") center/cover;
+height:350px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+background:rgba(0,0,0,.5);
+padding:15px;
+border-radius:10px;
+font-size:34px;
+}
+
+.products{
+padding:40px 20px;
+}
+
+.products h2{
+text-align:center;
+color:#8B4513;
+margin-bottom:25px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+text-align:center;
+padding:10px;
+}
+
+.price{
+text-align:center;
+font-size:20px;
+color:#d2691e;
+font-weight:bold;
+padding-bottom:10px;
+}
+
+.order{
+display:block;
+width:80%;
+margin:15px auto;
+text-align:center;
+background:#25D366;
+color:white;
+padding:10px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+background:#8B4513;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+</style>
+
 </head>
-
 <body>
 
 <header>
-  <h1>Madhus Home Bakery</h1>
-  <p>Fresh • Homemade • No Preservatives</p>
+<h1>🍰 Madhus Home Bakery</h1>
+<p>Fresh • Homemade • Delicious</p>
 </header>
 
-<!-- Cakes -->
-<div class="section">
-  <h2>Cakes</h2>
-  <img src="https://images.unsplash.com/photo-1599785209707-28d2a6b6f1c4">
-  <p>Delicious Cakes</p>
+<nav>
+<a href="#">Home</a>
+<a href="#">Cakes</a>
+<a href="#">Cookies</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Welcome to Madhus Home Bakery ❤️</h2>
+</section>
+
+<section class="products">
+<h2>🎂 Cakes</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600">
+<h3>Chocolate Cake</h3>
+<div class="price">₹800</div>
+<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
 </div>
 
-<!-- Dry Cakes -->
-<div class="section">
-  <h2>Dry Cakes</h2>
- <h3>Dry Cakes</h3>
-<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c"> 
-  <p>Dry Cakes</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?w=600">
+<h3>Red Velvet Cake</h3>
+<div class="price">₹1000</div>
+<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
 </div>
 
-<!-- Cookies -->
-<div class="section">
-  <h2>Cookies</h2>
-  <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52">
-  <p>Crunchy Cookies</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600">
+<h3>Butterscotch Cake</h3>
+<div class="price">₹800</div>
+<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
 </div>
 
-<!-- Chocolates -->
-<div class="section">
-  <h2>Chocolates</h2>
-  <h3>Chocolates</h3>
-<img src="https://images.unsplash.com/photo-1582176604856-e824b4736522">
-  <p>Sweet Chocolates</p>
 </div>
 
-<!-- Brownie -->
-<div class="section">
-  <h2>Brownie</h2>
-  <img src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31">
-  <p>Chocolate Brownie</p>
+</section>
+
+<section class="products">
+<h2>🍪 Cookies</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600">
+<h3>Chocolate Cookies</h3>
+<div class="price">₹180</div>
+<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
 </div>
 
-<!-- Donuts -->
-<div class="section">
-  <h2>Donuts</h2>
- <img src="https://images.unsplash.com/photo-1587738890502-9d5e8b3b7d5e"> 
-  <p>Tasty Donuts</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600">
+<h3>Butter Cookies</h3>
+<div class="price">₹200</div>
+<a class="order" href="https://wa.me/919347698049">Order on WhatsApp</a>
 </div>
 
-<!-- Bombolones -->
-<div class="section">
-  <h2>Bombolones</h2>
-  <h3>Bombolone</h3>
-<img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75">
-  <p>Soft Bombolones</p>
 </div>
 
-<!-- Sweets -->
-<div class="section">
-  <h2>Sweets</h2>
-  <h3>Sweets</h3>
-<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+</section>
 
-<p>
-✔ Laddu <br>
-✔ Kaju Katli <br>
-✔ Jalebi <br>
-✔ Boondi <br>
-✔ Dry Fruit Laddu
-</p>
-  <p>Traditional Sweets</p>
-</div>
-
-<!-- Hot Items -->
-<div class="section">
-  <h2>Hot Items</h2>
- <h3>Hot Items (Veg)</h3>
-<img src="https://images.unsplash.com/photo-1604908554027-1e3c9d0d5c6b">
-
-<p>
-✔ Jantikalu <br>
-✔ Boondi <br>
-✔ Palli Pakodi <br>
-✔ Chakalu <br>
-✔ Mixture
-</p> 
-  <p>Boondi, Jantikalu, Pakodi</p>
-</div>
-<div class="section">
-
-  <h3>Pickles (Veg)</h3>
-  <img src="https://images.unsplash.com/photo-1625944525903-bf9b7a8c2d3c">
-
-  <h3>Pickles (Non-Veg)</h3>
-  <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f">
-
-</div>
-<!-- Contact -->
-<div class="section">
-  <h2>Contact</h2>
-  <p>📍 Kalidindi</p>
-  <p>📞 9347698049</p>
-</div>
-
-<!-- WhatsApp -->
-<a class="whatsapp" href="https://wa.me/919347698049">Order Now</a>
+<footer>
+<h3>📞 Call: 9347698049</h3>
+<p>© 2026 Madhus Home Bakery. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
