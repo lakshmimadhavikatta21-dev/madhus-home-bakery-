@@ -1,194 +1,297 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madhus Home Bakery</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#fff8f0;
-color:#333;
-}
-
-header{
-background:#8B4513;
-color:#fff;
-padding:20px;
-text-align:center;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-header h1{
-font-size:36px;
-}
-
-header p{
-margin-top:8px;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-color:#fff;
-text-decoration:none;
-margin:0 10px;
-font-weight:600;
-}
-
-.hero{
-height:400px;
-background:url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200") center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero-content{
-background:rgba(0,0,0,.55);
-padding:25px;
-border-radius:12px;
-color:#fff;
-}
-
-.hero-content h2{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.hero-content p{
-font-size:18px;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-text-decoration:none;
-background:#25D366;
-color:#fff;
-padding:12px 24px;
-border-radius:30px;
-
-font-weight:bold;
-}
-  
-  .products{
-  padding:40px 20px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#fff;
-  border-radius:15px;
-  overflow:hidden;
-  box-shadow:0 5px 15px rgba(0,0,0,.15);
-  transition:.3s;
-  text-align:center;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-.card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-}
-
-.card h3{
-  margin:15px 0;
-}
-
-.card p{
-  font-size:20px;
-  color:#8B4513;
-  font-weight:bold;
-}
-
-footer{
-  background:#8B4513;
-  color:white;
-  text-align:center;
-  padding:20px;
-  margin-top:40px;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f8f5ef;color:#333}
+header{background:#8b4513;color:#fff;padding:20px;text-align:center}
+header h1{font-size:2.2rem}
+header p{margin:10px 0}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:15px;margin-top:15px}
+nav a{color:#fff;text-decoration:none;font-weight:600}
+section{padding:30px 20px}
+section h2{text-align:center;color:#8b4513;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.1);text-align:center}
+.card img{width:100%;height:180px;object-fit:cover}
+.card h3{margin:15px 0 8px}
+.price{color:#8b4513;font-size:1.2rem;font-weight:700;margin-bottom:10px}
+button{background:#25d366;color:#fff;border:none;padding:12px 24px;border-radius:30px;font-weight:700;margin-bottom:18px;cursor:pointer}
+.about,.contact{background:#fff;border-radius:15px;padding:25px;max-width:900px;margin:0 auto;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+footer{background:#8b4513;color:#fff;text-align:center;padding:18px;margin-top:30px}
 </style>
 </head>
+<body><header>
+<h1>🍰 Madhus Home Bakery</h1>
+<p>Fresh • Homemade • Delicious</p>
+<nav>
+<a href="#cakes">Cakes</a>
+<a href="#drycakes">Dry Fruit Cakes</a>
+<a href="#cookies">Cookies</a>
+<a href="#chocolates">Chocolates</a>
+<a href="#donuts">Donuts</a>
+<a href="#bombolones">Bombolones</a>
+<a href="#sweets">Sweets</a>
+<a href="#hots">Hots</a>
+<a href="#vegpickles">Veg Pickles</a>
+<a href="#nonvegpickles">Non-Veg Pickles</a>
+<a href="#contact">Contact</a>
+</nav>
+</header><section id="cakes">
+<h2>Cakes</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="Chocolate Cake">
+<h3>Chocolate Cake</h3>
+<div class="price">₹800</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800" alt="Butterscotch Cake">
+<h3>Butterscotch Cake</h3>
+<div class="price">₹850</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" alt="Red Velvet Cake">
+<h3>Red Velvet Cake</h3>
+<div class="price">₹1000</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="drycakes">
+<h2>Dry Fruit Cakes</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=800" alt="Dry Fruit Cake">
+<h3>Rich Dry Fruit Cake</h3>
+<div class="price">₹900</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800" alt="Plum Cake">
+<h3>Plum Cake</h3>
+<div class="price">₹950</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="cookies">
+<h2>Cookies</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800" alt="Cookies">
+<h3>Chocolate Cookies</h3>
+<div class="price">₹250</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800" alt="Butter Cookies">
+<h3>Butter Cookies</h3>
+<div class="price">₹220</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800" alt="Dry Fruit Cookies">
+<h3>Dry Fruit Cookies</h3>
+<div class="price">₹280</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="chocolates">
+<h2>Homemade Chocolates</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=800" alt="Homemade Chocolates">
+<h3>Homemade Chocolates</h3>
+<div class="price">₹300</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=800" alt="Dry Fruit Chocolates">
+<h3>Dry Fruit Chocolates</h3>
+<div class="price">₹350</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="donuts">
+<h2>Donuts</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800" alt="Chocolate Donut">
+<h3>Chocolate Donut</h3>
+<div class="price">₹120</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=800" alt="Strawberry Donut">
+<h3>Strawberry Donut</h3>
+<div class="price">₹130</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="bombolones">
+<h2>Bombolones</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800" alt="Cream Bombolone">
+<h3>Cream Bombolone</h3>
+<div class="price">₹150</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800" alt="Chocolate Bombolone">
+<h3>Chocolate Bombolone</h3>
+<div class="price">₹170</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="sweets">
+<h2>Traditional Sweets</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800" alt="Boondi Laddu">
+<h3>Boondi Laddu</h3>
+<div class="price">₹300/kg</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800" alt="Kaju Katli">
+<h3>Kaju Katli</h3>
+<div class="price">₹800/kg</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800" alt="Gulab Jamun">
+<h3>Gulab Jamun</h3>
+<div class="price">₹350/kg</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="hots">
+<h2>Hots</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Murukulu">
+<h3>Murukulu</h3>
+<div class="price">₹250/kg</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Chekkalu">
+<h3>Chekkalu</h3>
+<div class="price">₹280/kg</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Atukula Mixture">
+<h3>Atukula Mixture</h3>
+<div class="price">₹220/kg</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="vegpickles">
+<h2>Veg Pickles</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Mango Pickle">
+<h3>Mango Pickle (Avakaya)</h3>
+<div class="price">₹250</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Lemon Pickle">
+<h3>Lemon Pickle</h3>
+<div class="price">₹200</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="nonvegpickles">
+<h2>Non-Veg Pickles</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Chicken Pickle">
+<h3>Chicken Pickle</h3>
+<div class="price">₹350</div>
+<button>Order</button>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Mutton Pickle">
+<h3>Mutton Pickle</h3>
+<div class="price">₹450</div>
+<button>Order</button>
+</div>
+</div>
+</section><section id="about">
+<h2>About Us</h2>
+<div class="about">
+<p>Welcome to <strong>Madhus Home Bakery</strong>. We prepare fresh homemade cakes, cookies, chocolates, donuts, bombolones, traditional sweets, hot snacks, and veg/non-veg pickles with love and quality ingredients.</p>
+</div>
+</section><section id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<p><strong>Phone / WhatsApp:</strong> 9347698049</p>
+<p><strong>Instagram:</strong> @madhushomebakery</p>
+<p><strong>Email:</strong> madhushomebakery@gmail.com</p>
+</div>
+</section><footer> 
+<p>© 2026 Madhus Home Bakery. All rights reserved.</p>
+</footer></body>
+  </html
+    <!-- Veg Pickles Section --><section id="vegpickles">
+  <h2>Veg Pickles</h2>
+  <div class="grid"><div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Mango Pickle">
+  <h3>Mango Pickle (Avakaya)</h3>
+  <div class="price">₹250 / 500g</div>
+  <button>Order</button>
+</div>
 
-<body>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Lemon Pickle">
+  <h3>Lemon Pickle</h3>
+  <div class="price">₹220 / 500g</div>
+  <button>Order</button>
+</div>
 
-<header>
-  <h1>🍰 Madhus Home Bakery</h1>
-  <p>Fresh • Homemade • Delicious</p>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Gongura Pickle">
+  <h3>Gongura Pickle</h3>
+  <div class="price">₹240 / 500g</div>
+  <button>Order</button>
+</div>
 
-  <nav>
-    <a href="#cakes">Cakes</a>
-    <a href="#cookies">Cookies</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  </div>
+</section><!-- Non-Veg Pickles Section --><section id="nonvegpickles">
+  <h2>Non-Veg Pickles</h2>
+  <div class="grid"><div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Chicken Pickle">
+  <h3>Chicken Pickle</h3>
+  <div class="price">₹350 / 500g</div>
+  <button>Order</button>
+</div>
 
-<section class="hero">
-  <div class="hero-content">
-    <h2>Welcome to Madhus Home Bakery ❤️</h2>
-    <p>Fresh Cakes, Cookies, Chocolates & More</p>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Mutton Pickle">
+  <h3>Mutton Pickle</h3>
+  <div class="price">₹450 / 500g</div>
+  <button>Order</button>
+</div>
 
-    <a class="btn"
-       href="https://wa.me/919347698049"
-       target="_blank">
-       Order on WhatsApp
-    </a>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Prawn Pickle">
+  <h3>Prawn Pickle</h3>
+  <div class="price">₹400 / 500g</div>
+  <button>Order</button>
+</div>
+
   </div>
 </section>
-
-<section class="products" id="cakes">
-<h2 style="text-align:center;color:#8B4513;margin:30px 0;">
-🎂 Our Cakes
-</h2>
-
-<div class="grid">
-
 <div class="card">
-<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600">
-<h3>Chocolate Cake</h3>
-<p>₹800</p>
-<a class="btn" href="https://wa.me/919347698049">Order</a>
+  <img src="https://images.unsplash.com/photo-1604908176997-43128cfe0f17?w=800" alt="Chicken Pickle">
+  <h3>Chicken Pickle</h3>
+  <div class="price">₹350 / 500g</div>
+  <button>Order</button>
 </div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600">
-<h3>Butterscotch Cake</h3>
-<p>₹850</p>
-<a class="btn" href="https://wa.me/919347698049">Order</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?w=600">
-<h3>Red Velvet Cake</h3>
-<p>₹1000</p>
-<a class="btn" href="https://wa.me/919347698049">Order</a>
-</div>
-
-</div>
-</section>
