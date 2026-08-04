@@ -129,8 +129,10 @@
 </section><section class="section" id="hots">
   <h2>Hots</h2>
   <div class="grid">
-    <div class="card"><img src="images/hots.jpg" alt="Hots"><h3>Hot Snacks</h3></div>
-  </div>
+    <div class="item">
+  <img src="images/jantikalu.jpg" alt="Jantikalu">
+  <h3>Jantikalu</h3>
+</div>
 </section><section class="section" id="pickles">
   <h2>Pickles</h2>
   <div class="grid">
