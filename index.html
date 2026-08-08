@@ -1,138 +1,158 @@
-
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Madhu's Home Bakery</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:#fff8f5;color:#333}
-    header{
-      background:#8b4513;
-      color:#fff;
-      text-align:center;
-      padding:30px 20px;
-    }
-    header h1{font-size:36px}
-    header p{margin-top:8px;font-size:18px}
-    nav{
-      background:#a0522d;
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      padding:10px;
-    }
-    nav a{
-      color:#fff;
-      text-decoration:none;
-      margin:8px 15px;
-      font-weight:600;
-    }
-    .hero{
-      background:#f3d9c1;
-      text-align:center;
-      padding:40px 20px;
-    }
-    .hero h2{font-size:32px;margin-bottom:10px}
-    .hero p{font-size:18px}
-    .section{
-      padding:40px 20px;
-      max-width:1200px;
-      margin:auto;
-    }
-    .section h2{
-      text-align:center;
-      margin-bottom:25px;
-      color:#8b4513;
-      font-size:30px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-    }
-    .card{
-      background:#fff;
-      border-radius:15px;
-      overflow:hidden;
-      box-shadow:0 4px 10px rgba(0,0,0,.12);
-      text-align:center;
-      transition:.3s;
-    }
-    .card:hover{transform:translateY(-5px)}
-    .card img{
-      width:100%;
-      height:180px;
-      object-fit:cover;
-    }
-    .card h3{
-      padding:15px;
-      color:#8b4513;
-    }
-    .contact{
-      background:#8b4513;
-      color:#fff;
-      text-align:center;
-      padding:40px 20px;
-    }
-    .contact p{font-size:18px;margin:10px 0}
-    .whatsapp{
-      display:inline-block;
-      margin-top:15px;
-      padding:12px 24px;
-      background:#25D366;
-      color:#fff;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:700;
-    }
-    footer{
-      background:#5a2d0c;
-      color:#fff;
-      text-align:center;
-      padding:15px;
-      font-size:14px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhus Home Bakery</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff8f0;
+}
+
+header {
+  background: #ff6b6b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.section {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.item {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+
 </head>
-<body><header>
-  <h1>Madhu's Home Bakery</h1>
-  <p>Freshly Baked with Love | Homemade Delicacies</p>
-</header><nav>
-  <a href="#cakes">Cakes</a>
-  <a href="#cookies">Cookies</a>
-  <a href="#sweets">Sweets</a>
-  <a href="#hots">Hots</a>
-  <a href="#pickles">Pickles</a>
-  <a href="#contact">Contact</a>
-</nav><section class="hero">
-  <h2>Welcome to Madhu's Home Bakery</h2>
-  <p>Cakes, Dry Fruit Cakes, Cookies, Chocolates, Cake Pops, Brownies, Donuts, Bombolones, Traditional Sweets, Hots, Veg Pickles & Non-Veg Pickles</p>
-</section><section class="section" id="cakes">
-  <h2>Cakes & Desserts</h2>
-  <div class="grid">
-    <img src="https://source.unsplash.com/300x200/?cake" alt="Cakes">
 
-<img src="https://source.unsplash.com/300x200/?cookies" alt="Cookies">
+<body>
 
-<img src="https://source.unsplash.com/300x200/?chocolate" alt="Chocolates">
+<header>
+  <h1>Madhus Home Bakery</h1>
+  <p>No Chemicals | No Preservatives | Homemade with Love ❤️</p>
+</header>
 
-<img src="https://source.unsplash.com/300x200/?donut" alt="Donuts">
+<div class="section">
+  <h2>Cakes</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?cake">
+      <p>Cakes</p>
+    </div>
 
-<img src="https://source.unsplash.com/300x200/?brownie" alt="Brownies">
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?dry-cake">
+      <p>Dry Fruit Cakes</p>
+    </div>
 
-<img src="https://source.unsplash.com/300x200/?indian-sweets" alt="Sweets">
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?cake-pops">
+      <p>Cake Pops</p>
+    </div>
+  </div>
+</div>
 
-<img src="https://source.unsplash.com/300x200/?snacks" alt="Hots">
-<img src="https://source.unsplash.com/300x200/?veg-pickle" alt="Veg Pickles">
-<img src="https://source.unsplash.com/300x200/?chicken-pickle" alt="Non-Veg Pickles">      
-</section><section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Phone / WhatsApp:</strong> 9347698049</p>
-  <p><strong>Address:</strong> Kalidindi, Andhra Pradesh - 521344</p>
-  <a class="whatsapp" href="https://wa.me/919347698049" target="_blank">Order on WhatsApp</a>
-</section><footer>
-  &copy; 2026 Madhu's Home Bakery. All Rights Reserved.
-</footer></body>
+<div class="section">
+  <h2>Chocolates & Desserts</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?chocolate">
+      <p>Chocolates</p>
+    </div>
+
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?brownie">
+      <p>Brownies</p>
+    </div>
+
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?donut">
+      <p>Donuts</p>
+    </div>
+
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?bomboloni">
+      <p>Bombolones</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Sweets</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?laddu">
+      <p>Laddu</p>
+    </div>
+
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?indian-sweets">
+      <p>Traditional Sweets</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Hot Items</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?snacks">
+      <p>Snacks (Jantikalu, Pakodi)</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Pickles</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?pickle">
+      <p>Veg Pickles</p>
+    </div>
+
+    <div class="item">
+      <img src="https://source.unsplash.com/300x200/?nonveg-food">
+      <p>Non-Veg Pickles</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>📍 Kalidindi | 📞 9347698049</p>
+</footer>
+
+</body>
 </html>
