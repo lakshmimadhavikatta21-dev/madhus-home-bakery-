@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Madhus Home Bakery</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#fff8f2;
+  color:#4a2720;
+}
+
+header{
+  background:#7b2634;
+  color:white;
+  padding:18px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:bold;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+  font-weight:bold;
+}
+
+.hero{
+  text-align:center;
+  padding:70px 20px;
+  background:#f6d7c8;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:19px;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:inline-block;
+  background:#7b2634;
+  color:white;
+  padding:13px 24px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+section{
+  padding:45px 6%;
+}
+
+section h2{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:30px;
+  color:#7b2634;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  padding:25px 15px;
+  text-align:center;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.icon{
+  font-size:55px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  color:#7b2634;
+  margin-bottom:8px;
+}
+
+.card p{
+  font-size:14px;
+  color:#666;
+}
+
+.contact{
+  background:#f6d7c8;
+  text-align:center;
+}
+
+.contact p{
+  margin:12px 0;
+  font-size:18px;
+}
+
+.whatsapp{
+  display:inline-block;
+  background:#25D366;
+  color:white;
+  padding:13px 25px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:15px;
+}
+
+footer{
+  background:#7b2634;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+@media(max-width:600px){
+  header{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  nav a{
+    margin:5px;
+    font-size:14px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🍰 Madhus Home Bakery</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#sweets">Sweets</a>
+    <a href="#
