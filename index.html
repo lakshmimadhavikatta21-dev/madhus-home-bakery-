@@ -89,7 +89,7 @@ section h2{
 .card{
   background:white;
   border-radius:15px;
-  padding:25px 15px;
+  padding:15px;
   text-align:center;
   box-shadow:0 4px 12px rgba(0,0,0,.12);
   transition:.2s;
@@ -99,8 +99,11 @@ section h2{
   transform:translateY(-5px);
 }
 
-.icon{
-  font-size:55px;
+.product-img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  border-radius:12px;
   margin-bottom:12px;
 }
 
@@ -143,6 +146,7 @@ footer{
 }
 
 @media(max-width:600px){
+
   header{
     flex-direction:column;
     gap:12px;
@@ -156,204 +160,382 @@ footer{
   .hero h1{
     font-size:32px;
   }
+
 }
 </style>
 </head>
-  
 
 <body>
 
 <header>
-  <div class="logo">🍰 Madhus Home Bakery</div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#menu">Menu</a>
-    <a href="#sweets">Sweets</a>
-    <a href="#hots">Hots</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="logo">
+🍰 Madhus Home Bakery
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#sweets">Sweets</a>
+<a href="#hots">Hots</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
+
 <section class="hero" id="home">
-  <h1>Welcome to Madhus Home Bakery 🍰</h1>
-  <p>Homemade • Fresh • Delicious</p>
-  <a class="btn" href="#menu">View Our Menu</a>
+
+<h1>
+Welcome to Madhus Home Bakery 🍰
+</h1>
+
+<p>
+Homemade • Fresh • Delicious
+</p>
+
+<a class="btn" href="#menu">
+View Our Menu
+</a>
+
 </section>
+
+
+<!-- BAKERY MENU -->
 
 <section id="menu">
-  <h2>🍰 Bakery Menu</h2>
 
-  <div class="grid">
+<h2>🍰 Bakery Menu</h2>
 
-    <div class="card">
-      <div class="icon">🎂</div>
-      <h3>Cakes</h3>
-      <p>Fresh homemade cakes</p>
-    </div>
+<div class="grid">
 
-    <div class="card">
-      <div class="icon">🍰</div>
-      <h3>Dry Cakes</h3>
-      <p>Delicious dry cakes</p>
-    </div>
 
-    <div class="card">
-      <div class="icon">🥜</div>
-      <h3>Dryfruit Cakes</h3>
-      <p>Rich dryfruit cakes</p>
-    </div>
+<div class="card">
 
-    <div class="card">
-      <div class="icon">🍪</div>
-      <h3>Cookies</h3>
-      <p>Crispy homemade cookies</p>
-    </div>
+<img
+src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Cakes">
 
-    <div class="card">
-      <div class="icon">🍫</div>
-      <h3>Chocolates</h3>
-      <p>Homemade chocolates</p>
-    </div>
+<h3>Cakes</h3>
 
-    <div class="card">
-      <div class="icon">🍭</div>
-      <h3>Cake Pops</h3>
-      <p>Beautiful cake pops</p>
-    </div>
+<p>
+Fresh homemade cakes
+</p>
 
-    <div class="card">
-      <div class="icon">🍫</div>
-      <h3>Brownies</h3>
-      <p>Soft and delicious brownies</p>
-    </div>
+</div>
 
-    <div class="card">
-      <div class="icon">🍩</div>
-      <h3>Donuts</h3>
-      <p>Fresh homemade donuts</p>
-    </div>
 
-    <div class="card">
-      <div class="icon">🥯</div>
-      <h3>Bombolones</h3>
-      <p>Soft filled bombolones</p>
-    </div>
+<div class="card">
 
-  </div>
+<img
+src="https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Dry Cakes">
+
+<h3>Dry Cakes</h3>
+
+<p>
+Delicious dry cakes
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Dryfruit Cakes">
+
+<h3>Dryfruit Cakes</h3>
+
+<p>
+Rich dryfruit cakes
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Cookies">
+
+<h3>Cookies</h3>
+
+<p>
+Crispy homemade cookies
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Chocolates">
+
+<h3>Chocolates</h3>
+
+<p>
+Homemade chocolates
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Cake Pops">
+
+<h3>Cake Pops</h3>
+
+<p>
+Beautiful cake pops
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1606313564200-e75d5e30476a?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Brownies">
+
+<h3>Brownies</h3>
+
+<p>
+Soft and delicious brownies
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Donuts">
+
+<h3>Donuts</h3>
+
+<p>
+Fresh homemade donuts
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1582211594533-268f4f1edc63?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Bombolones">
+
+<h3>Bombolones</h3>
+
+<p>
+Soft filled bombolones
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- SWEETS -->
 
 <section id="sweets">
-  <h2>🍬 Traditional Sweets</h2>
 
-  <div class="grid">
+<h2>🍬 Traditional Sweets</h2>
 
-    <div class="card">
-      <div class="icon">🍬</div>
-      <h3>Boondi</h3>
-      <p>Traditional homemade boondi</p>
-    </div>
+<div class="grid">
 
-    <div class="card">
-      <div class="icon">🍯</div>
-      <h3>Traditional Sweets</h3>
-      <p>Fresh traditional sweets</p>
-    </div>
 
-    <div class="card">
-      <div class="icon">🥜</div>
-      <h3>Special Sweets</h3>
-      <p>Homemade special sweets</p>
-    </div>
+<div class="card">
 
-  </div>
+<img
+src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Boondi">
+
+<h3>Boondi</h3>
+
+<p>
+Traditional homemade boondi
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1606471191009-63994c53433b?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Traditional Sweets">
+
+<h3>Traditional Sweets</h3>
+
+<p>
+Fresh traditional sweets
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1601370690183-1c7796ecec61?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Special Sweets">
+
+<h3>Special Sweets</h3>
+
+<p>
+Homemade special sweets
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- HOT ITEMS -->
 
 <section id="hots">
-  <h2>🌶️ Hot Items & Snacks</h2>
 
-  <div class="grid">
+<h2>🌶️ Hot Items</h2>
 
-    <div class="card">
-      <div class="icon">🌶️</div>
-      <h3>Ganthikalu</h3>
-      <p>Traditional crispy snack</p>
-    </div>
+<div class="grid">
 
-    <div class="card">
-      <div class="icon">🥜</div>
-      <h3>Atukula Mixture</h3>
-      <p>Crunchy homemade mixture</p>
-    </div>
 
-    <div class="card">
-      <div class="icon">🌶️</div>
-      <h3>Hot Snacks</h3>
-      <p>Fresh homemade hot items</p>
-    </div>
+<div class="card">
 
-    <div class="card">
-      <div class="icon">🥒</div>
-      <h3>Veg Pickles</h3>
-      <p>Homemade veg pickles</p>
-    </div>
+<img
+src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Ganthikalu">
 
-    <div class="card">
-      <div class="icon">🥩</div>
-      <h3>Non-Veg Pickles</h3>
-      <p>Homemade non-veg pickles</p>
-    </div>
+<h3>Ganthikalu</h3>
 
-  </div>
+<p>
+Traditional crispy snack
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1626132646535-8e7e2e5e5b7e?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Atukula Mixture">
+
+<h3>Atukula Mixture</h3>
+
+<p>
+Crunchy homemade mixture
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Veg Pickles">
+
+<h3>Veg Pickles</h3>
+
+<p>
+Homemade veg pickles
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1626776876729-bab4369a5a5a?auto=format&fit=crop&w=600&q=80"
+class="product-img"
+alt="Non Veg Pickles">
+
+<h3>Non-Veg Pickles</h3>
+
+<p>
+Homemade non-veg pickles
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section>
-  <h2>🥣 Special Homemade Products</h2>
 
-  <div class="grid">
-
-    <div class="card">
-      <div class="icon">🌾</div>
-      <h3>Jowar Powder</h3>
-      <p>Homemade traditional powder</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🥣</div>
-      <h3>Traditional Powders</h3>
-      <p>Fresh homemade powders</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">🍯</div>
-      <h3>Bellam Special</h3>
-      <p>Traditional homemade products</p>
-    </div>
-
-  </div>
-</section>
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
-  <h2>📞 Contact Us</h2>
+<h2>📞 Contact Us</h2>
 
-  <p><strong>Madhus Home Bakery</strong></p>
+<p>
+<strong>Madhus Home Bakery</strong>
+</p>
 
-  <p>📱 WhatsApp / Phone: 9347698049</p>
+<p>
+📱 WhatsApp / Phone: 9347698049
+</p>
 
-  <p>🏠 Homemade Fresh & Delicious Products</p>
+<p>
+🏠 Homemade Fresh & Delicious Products
+</p>
 
-  <a class="whatsapp"
-     href="https://wa.me/919347698049"
-     target="_blank">
-     💬 Order on WhatsApp
-  </a>
+<a
+class="whatsapp"
+href="https://wa.me/919347698049"
+target="_blank">
+
+💬 Order on WhatsApp
+
+</a>
 
 </section>
 
+
 <footer>
-  <p>© 2026 Madhus Home Bakery</p>
-  <p>Made with ❤️ for our customers</p>
+
+<p>
+© 2026 Madhus Home Bakery
+</p>
+
+<p>
+Made with ❤️ for our customers
+</p>
+
 </footer>
 
 </body>
